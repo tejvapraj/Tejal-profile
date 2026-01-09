@@ -669,19 +669,65 @@ body {
   text-align: center;
 }
 
+.hero-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* space between text and image */
+  }
+
+    /* Center the hero text */
+  .hero-text {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+  }
+
 .hero-content {
   flex-direction: column;
   align-items: center;
 }
 
-.hero-text {
-  align-items: center;
-  text-align: center;
-}
+  /* Buttons stack vertically and full width */
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .btn, .btn-outline {
+    width: 80%;
+    max-width: 250px;
+    text-align: center;
+  }
 
-.profile-card {
-  margin-top: 20px;
-}
+    /* Hero stats stack vertically */
+  .hero-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+  }
+   /* Reduce hero image size */
+  .profile-card {
+    width: 180px;
+    height: 180px;
+    margin-top: 15px;
+  }
+  .hero-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 15px auto;
+  }
+
+  .tech-stack {
+    justify-content: center;
+  }
+
 
 img {
   max-width: 100%;
