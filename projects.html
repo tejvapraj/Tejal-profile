@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tejal | Portfolio</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Background Glows -->
+  <div class="glow one"></div>
+  <div class="glow two"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h2 class="logo">Tejal.dev</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Projects Section -->
+  <section class="page">
+    <h2>Projects</h2>
+
+    <!-- ================= LASA PROJECT ================= -->
+    <div class="project-detail">
+
+      <h3>LASA – Load Aware Seat Allocation System</h3>
+      <p class="project-type">Research Project</p>
+
+      <h4>Overview</h4>
+      <p>
+        LASA is a research-based intelligent railway seat allocation system that improves
+        traditional booking by balancing passenger load across coaches using algorithmic logic.
+      </p>
+
+      <h4>Problem It Solves</h4>
+      <p>
+        Traditional railway systems allocate seats sequentially without considering coach load,
+        leading to imbalance and inefficient seat utilization.
+      </p>
+
+      <h4>How It Works</h4>
+      <div class="flow">
+        <div class="flow-step">Passenger details are entered.</div>
+        <div class="flow-step">System calculates coach-wise load.</div>
+        <div class="flow-step">Least-loaded coach is selected.</div>
+        <div class="flow-step">Seat assigned based on preference + balance.</div>
+        <div class="flow-step">Seat chart updates dynamically.</div>
+        <div class="flow-step">Freed seats are reused mid-journey.</div>
+      </div>
+
+      <h4>Tech Stack</h4>
+      <p class="tags">
+        <span>Python</span>
+        <span>Algorithm Design</span>
+        <span>Data Simulation</span>
+        <span>Visualization</span>
+      </p>
+
+      <h4>Challenges & Learnings</h4>
+      <ul>
+        <li>Designing a fair load-balancing algorithm</li>
+        <li>Handling multiple passenger constraints</li>
+        <li>Understanding real-world optimization logic</li>
+      </ul>
+
+      <h4>Screenshots</h4>
+      <div class="screenshots">
+        <img src="assets/images/img_1.jpeg" class="project-img" alt="Seat Allocation" onclick="openModal(this)">
+        <img src="assets/images/img_2.jpeg" class="project-img" alt="Seat Chart" onclick="openModal(this)">
+        <img src="assets/images/img_3.jpeg" class="project-img" alt="Load Comparison" onclick="openModal(this)">
+      </div>
+
+      <div class="project-links">
+        
+        <a href="https://github.com/tejvapraj/Load-aware-seat-allocation-system.git" class="btn-sm outline">GitHub</a>
+      </div>
+
+    </div>
+
+    <!-- ================= AI RESUME PROJECT ================= -->
+    <div class="project-detail">
+
+      <h3>AI-Powered Resume Screening System</h3>
+      <p class="project-type">AI / NLP Project</p>
+
+      <h4>Overview</h4>
+      <p>
+        A web-based AI system that compares resumes against job descriptions using NLP
+        techniques and recommends the best-matching candidate.
+      </p>
+
+      <h4>What It Does</h4>
+      <ul>
+        <li>Analyzes resumes and job descriptions</li>
+        <li>Calculates match percentage</li>
+        <li>Provides candidate comparison</li>
+        <li>Suggests best fit automatically</li>
+      </ul>
+
+      <h4>Tech Stack</h4>
+      <p class="tags">
+        <span>Python</span>
+        <span>NLP</span>
+        <span>TF-IDF</span>
+        <span>Scikit-learn</span>
+        <span>Streamlit</span>
+      </p>
+
+      <h4>Screenshots</h4>
+      <div class="screenshots">
+        <img src="assets/images/resume-ai.png" class="project-img" alt="AI Resume Screening" onclick="openModal(this)">
+        <img src="assets/images/resume-ai-2.png" class="project-img" alt="AI Resume Screening" onclick="openModal(this)">
+        <img src="assets/images/resume-ai-3.png" class="project-img" alt="AI Resume Screening" onclick="openModal(this)">
+      </div>
+
+
+      <div class="project-links">
+        <a href="https://tejal-ai-powerd-resume-screening-10.streamlit.app/" class="btn-sm">Live Demo</a>
+        <a href="https://github.com/tejvapraj/Ai-Powerd-Resume-Screening.git" class="btn-sm outline">GitHub</a>
+      </div>
+
+    </div>
+
+    <!-- ================= IMAGE CAPTION PROJECT ================= -->
+    <div class="project-detail">
+
+      <h3>Image Caption Generation</h3>
+      <p class="project-type">Generative AI Project</p>
+
+      <h4>Overview</h4>
+      <p>
+        A Generative AI application that produces meaningful captions for images using the
+        BLIP vision-language model with real-time web integration.
+      </p>
+
+      <h4>Tech Stack</h4>
+      <p class="tags">
+        <span>Python</span>
+        <span>Generative AI</span>
+        <span>BLIP</span>
+        <span>Computer Vision</span>
+      </p>
+
+      <h4>Screenshots</h4>
+      <div class="screenshots">
+        <img src="assets/images/techfer-1.png" class="project-img" alt="Image Caption Generation" onclick="openModal(this)">
+        <img src="assets/images/techfer-2.png" class="project-img" alt="Image Caption Generation" onclick="openModal(this)">
+        <img src="assets/images/techfer-3.png" class="project-img" alt="Image Caption Generation" onclick="openModal(this)">
+      </div>
+
+
+      <div class="project-links">
+      
+        <a href="https://github.com/tejvapraj/Imagify-AI---Techfer.git" class="btn-sm outline">GitHub</a>
+      </div>
+
+    </div>
+
+        <!-- ================= AI RESUME PROJECT ================= -->
+    <div class="project-detail">
+
+      <h3>Smart Calculator</h3>
+      <p class="project-type">HTML / JavaScript / Css</p>
+
+      <h4>Overview</h4>
+      <p>
+        A responsive, multi-purpose calculator with various tools like BMI, age, percentage, and dark mode.
+      </p>
+
+      <h4>What It Does</h4>
+      <ul>
+        <li>Includes BMI, Age, % Calculator</li>
+        <li>Dark Mode UI</li>
+        <li>Fully responsive</li>
+      </ul>
+
+      <h4>Tech Stack</h4>
+      <p class="tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Tailwind</span>
+        <span>JAVASCRIPT</span>
+      </p>
+
+      <h4>Screenshots</h4>
+      <div class="screenshots">
+        <img src="assets/images/cal-1.png" class="project-img" alt="Smart Calculator" onclick="openModal(this)">
+        <img src="assets/images/cal-2.png" class="project-img" alt="Smart Calculator" onclick="openModal(this)">
+        <img src="assets/images/cal-3.png" class="project-img" alt="Smart Calculator" onclick="openModal(this)">
+      </div>
+
+
+      <div class="project-links">
+        <a href="https://tejalapraj-calculator-suite.netlify.app/" class="btn-sm">Live Demo</a>
+        <a href="https://github.com/tejvapraj/calculator-website.git" class="btn-sm outline">GitHub</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= IMAGE MODAL ================= -->
+  <div id="imgModal" class="img-modal">
+    <span class="close-btn">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+
+  <!-- Script -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

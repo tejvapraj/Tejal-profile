@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Tejal | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="glow one"></div>
+    <div class="glow two"></div>
+
+    <nav class="navbar">
+        <h2 class="logo">Tejal.dev</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact-page">
+        <h2 class="page-title">Let’s Connect</h2>
+        <p class="page-subtitle">Have an opportunity or want to collaborate? I’d love to hear from you.</p>
+
+        <div class="contact-container">
+
+            <!-- Left: Contact Info -->
+            <div class="contact-info">
+
+                <div class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <a href="mailto:tejalvpersonal@gmail.com">tejalvpersonal@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <a href="https://linkedin.com/in/tejal-v-apraj" target="_blank">linkedin.com/in/tejalapraj</a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fa-brands fa-github"></i>
+                    <div>
+                        <h4>GitHub</h4>
+                        <a href="https://github.com/tejvapraj" target="_blank">github.com/tejalapraj</a>
+                    </div>
+                </div>
+
+                <div class="contact-note">
+                    <p>
+                        I am actively seeking entry-level or internship opportunities where I can apply my skills, learn
+                        from real-world projects, and grow as a software developer. I’m highly motivated, quick to
+                        learn, and always excited to work on meaningful and impactful applications. Feel free to connect
+                        with me via email or LinkedIn.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Right Form -->
+            <form class="contact-form card" action="https://formspree.io/f/xvzzpprj" method="POST"
+                onsubmit="handleSubmit(event)">
+
+                <h3>Send Me a Message</h3>
+
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+
+        </div>
+
+        <!-- Toast -->
+        <div id="toast" class="toast">Message sent successfully! 🚀</div>
+
+        </div>
+    </section>
