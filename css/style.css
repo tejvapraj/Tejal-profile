@@ -1,7 +1,12 @@
 
+
 /* Topology */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
+
+* {
+  max-width: 100%;
+}
 
 html, body {
   max-width: 100%;
@@ -45,6 +50,10 @@ body {
   animation: gradientBG 15s ease infinite;
   color: #e5e7eb;
   min-height: 100vh;
+
+  background: linear-gradient(120deg, #0f172a, #020617);
+  color: #e5e7eb;
+  min-height: 100vh;
 }
 
 @keyframes gradientBG {
@@ -63,11 +72,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  background: linear-gradient(120deg, #0f172a, #020617);
-  color: #e5e7eb;
-  min-height: 100vh;
-}
 
 /* Glow Circles */
 .glow {
@@ -134,7 +138,7 @@ body {
 /* Hero */
 .hero {
   min-height: 100vh;
-  padding: 120px 60px 60px;
+  padding: 120px 20px 60px;
   display: flex;
   align-items: center;
 }
